@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mechanical Engineer Portfolio</title>
+
+    <!-- Bootstrap + FontAwesome + Google Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Rubik&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        :root {
+            --accent-color: navy;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #343a40;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .section {
+            padding: 60px 20px;
+        }
+
+        .hero {
+            background: url('images/cover.jpg') center center / cover no-repeat fixed;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center -131px;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            /* dark overlay */
+            z-index: 1;
+        }
+
+        .hero>* {
+            position: relative;
+            z-index: 2;
+        }
+
+
+
+        .hero img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            transition: border-color 0.3s ease;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #003366;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card {
+            background-color: white;
+            color: #343a40;
+            border: 1px solid #dee2e6;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-title {
+            color: var(--accent-color);
+            transition: color 0.3s ease;
+        }
+
+        .timeline {
+            position: relative;
+            margin-left: 20px;
+            border-left: 3px solid var(--accent-color);
+            padding-left: 20px;
+        }
+
+        .timeline-entry {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .timeline-entry::before {
+            content: '';
+            position: absolute;
+            left: -12px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+        }
+
+        footer {
+            background-color: #e9ecef;
+            border-top: 1px solid #ced4da;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <img id="hero-img" src="images/20250527_190856_meaw.jpg" alt="Siam Bin Rashid" crossorigin="anonymous" />
+        <h1>Siam Bin Rashid</h1>
+        <p>
+            <i class="fas fa-cogs"></i> Mechanical Design Engineer |
+            <i class="fas fa-robot"></i> Robotics |
+            <i class="fas fa-cube"></i> 3D Systems
+        </p>
+        <p><i class="fas fa-envelope"></i> your.email@example.com | <i class="fas fa-phone"></i> +8801XXXXXXX</p>
+        <p style="color: white">
+            <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+            <a href="#"><i class="fab fa-github"></i> GitHub</a> |
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        </p>
+    </div>
+
+    <div class="container">
+        <section class="section" id="biography">
+            <h2><i class="fas fa-user"></i> Biography</h2>
+            <p>
+                I'm a passionate mechanical engineer with a specialization in 3D design and robotics. With hands-on
+                experience in CAD, CNC prototyping, and multi-disciplinary engineering projects, I aim to create
+                meaningful solutions in the field of mechatronics and product design.
+            </p>
+        </section>
+
+        <section class="section" id="gallery">
+            <h2><i class="fas fa-images"></i> Photo Gallery</h2>
+            <div class="row gallery">
+                <div class="col-md-4"><img src="images/" alt="Gallery 1" /></div>
+                <div class="col-md-4"><img src="gallery2.jpg" alt="Gallery 2" /></div>
+                <div class="col-md-4"><img src="gallery3.jpg" alt="Gallery 3" /></div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <h2><i class="fas fa-diagram-project"></i> Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="project1.jpg" class="card-img-top" alt="Project 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">SCARA Arm</h5>
+                            <p class="card-text">Custom-built robotic arm for pick-and-place automation. Designed for
+                                precision and modularity.</p>
+                            <a href="#"><i class="fab fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="project2.jpg" class="card-img-top" alt="Project 2" />
+                        <div class="card-body">
+                            <h5 class="card-title">Underwater ROV Shell</h5>
+                            <p class="card-text">Designed for fluid dynamics and component safety in deep-sea
+                                exploration projects.</p>
+                            <a href="#"><i class="fab fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="project3.jpg" class="card-img-top" alt="Project 3" />
+                        <div class="card-body">
+                            <h5 class="card-title">Mars Rover</h5>
+                            <p class="card-text">Autonomous rover built for harsh terrain, equipped with sensors and
+                                robotic manipulation capabilities.</p>
+                            <a href="#"><i class="fab fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="achievements">
+            <h2><i class="fas fa-trophy"></i> Achievements</h2>
+            <ul>
+                <li>Team Lead - UIU Mars Rover Team 2025</li>
+                <li>URC Finalist - University Rover Challenge USA</li>
+                <li>Top 10 - National Robotics Championship</li>
+            </ul>
+        </section>
+
+        <section class="section" id="work">
+            <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-entry">
+                    <h5><i class="fas fa-arrow-up"></i> Mechanical Subteam Lead <span class="text-muted">(UIU Mars Rover
+                            Team, 2024 - Present)</span></h5>
+                    <p>Promoted to lead the mechanical subteam. Oversaw system integration and on-site assembly in
+                        international competition.</p>
+                </div>
+                <div class="timeline-entry">
+                    <h5><i class="fas fa-user-cog"></i> Junior Mechanical Designer <span class="text-muted">(UIU Mars
+                            Rover Team, 2023 - 2024)</span></h5>
+                    <p>Designed robotic arms and optimized wheel systems. Supported fabrication and testing phases of
+                        the project.</p>
+                </div>
+                <div class="timeline-entry">
+                    <h5><i class="fas fa-user-graduate"></i> Intern <span class="text-muted">(MechaTech Ltd.,
+                            2023)</span></h5>
+                    <p>Worked in 3D CAD design and testing. Contributed to prototyping of mechanical systems used in
+                        robotics.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <ul>
+                <li><strong>B.Sc. in Computer Science and Engineering</strong>, United International University</li>
+                <li>Mechatronics course track focused on robotics, AI, and embedded systems</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="text-center py-4 mt-5">
+        <p>&copy; 2025 Siam Bin Rashid | Designed with Bootstrap <i class="fas fa-wrench"></i></p>
+    </footer>
+
+    <script>
+        window.addEventListener("load", () => {
+            const img = document.getElementById("hero-img");
+            const canvas = document.createElement("canvas");
+            const ctx = canvas.getContext("2d");
+
+            function extractColor() {
+                canvas.width = img.naturalWidth;
+                canvas.height = img.naturalHeight;
+                ctx.drawImage(img, 0, 0);
+
+                try {
+                    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+                    let r = 0, g = 0, b = 0, count = 0;
+
+                    for (let i = 0; i < imageData.length; i += 4 * 50) {
+                        r += imageData[i];
+                        g += imageData[i + 1];
+                        b += imageData[i + 2];
+                        count++;
+                    }
+
+                    r = Math.floor(r / count);
+                    g = Math.floor(g / count);
+                    b = Math.floor(b / count);
+
+                    const avgColor = `rgb(${r}, ${g}, ${b})`;
+                    document.documentElement.style.setProperty('--accent-color', avgColor);
+                    console.log("Accent color set to", avgColor);
+
+                    // Optional live preview
+                    document.querySelectorAll('h2').forEach(el => el.style.borderColor = avgColor);
+                    document.querySelectorAll('a').forEach(el => el.style.color = avgColor);
+                    document.querySelectorAll('.card-title').forEach(el => el.style.color = avgColor);
+                } catch (e) {
+                    console.warn("Could not extract image data (CORS issue or image not fully loaded)", e);
+                }
+            }
+
+            if (img.complete) {
+                extractColor();
+            } else {
+                img.onload = extractColor;
+            }
+        });
+
+    </script>
+</body>
+
+</html>
