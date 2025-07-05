@@ -82,13 +82,13 @@
         }
 
         a {
-            color: var(--accent-color);
+            color: white;
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         a:hover {
-            color: #003366;
+            color: #979797e3;
         }
 
         .gallery img {
@@ -126,7 +126,7 @@
         .timeline-entry::before {
             content: '';
             position: absolute;
-            left: -12px;
+            left: -47px;
             top: 5px;
             width: 16px;
             height: 16px;
@@ -154,7 +154,7 @@
             <i class="fa-solid fa-bug"></i> R&D
         </p>
         <p><i class="fas fa-envelope"></i> siambinrashid44@gmail.com | <i class="fas fa-phone"></i> +8801840484433</p>
-        <p style="color: white">
+        <p style="color: white !important">
             <a href="https://www.linkedin.com/in/siambinrashid/"><i class="fab fa-linkedin"></i> LinkedIn</a> |
             <a href="https://github.com/siambinrashid"><i class="fab fa-github"></i> GitHub</a> |
             <a href="https://www.instagram.com/piran_ha/"><i class="fab fa-instagram"></i> Instagram</a> |
@@ -166,12 +166,12 @@
         <section class="section" id="biography">
             <h2><i class="fas fa-user"></i> Biography</h2>
             <p>
-                 I’m a passionate mechanical engineer specializing in 3D design, robotics, embedded systems, 
-                 and drone technology. I have hands-on experience in developing and integrating embedded systems 
-                 for real-time control, sensor fusion, and automation. With a strong foundation in CAD modeling, 
-                 CNC prototyping, and drone design—from assembly and firmware flashing to field testing—I bring 
-                 ideas to life through precision engineering. My work bridges mechanical systems with electronics 
-                 and software to deliver innovative, high-performance solutions across various domains.
+                I’m a passionate mechanical engineer specializing in 3D design, robotics, embedded systems,
+                and drone technology. I have hands-on experience in developing and integrating embedded systems
+                for real-time control, sensor fusion, and automation. With a strong foundation in CAD modeling,
+                CNC prototyping, and drone design—from assembly and firmware flashing to field testing—I bring
+                ideas to life through precision engineering. My work bridges mechanical systems with electronics
+                and software to deliver innovative, high-performance solutions across various domains.
 
             </p>
         </section>
@@ -179,9 +179,12 @@
         <section class="section" id="gallery">
             <h2><i class="fas fa-images"></i> Photo Gallery</h2>
             <div class="row gallery">
-                <div class="col-md-4"><img src="images/" alt="Gallery 1" /></div>
-                <div class="col-md-4"><img src="gallery2.jpg" alt="Gallery 2" /></div>
-                <div class="col-md-4"><img src="gallery3.jpg" alt="Gallery 3" /></div>
+                <div class="col-md-4"><img src="images/team.jpg" alt="Gallery 1" /></div>
+                <div class="col-md-4"><img src="images/with rover.jpg" alt="Gallery 2" /></div>
+                <div class="col-md-4"><img src="images/atmdrs.jpg" alt="Gallery 3" /></div>
+                <div class="col-md-4"><img src="images/canyonland.jpg" alt="Gallery 1" /></div>
+                <div class="col-md-4"><img src="images/during science mission.jpg" alt="Gallery 2" /></div>
+                <div class="col-md-4"><img src="images/science setup.jpg" alt="Gallery 3" /></div>
             </div>
         </section>
 
@@ -195,7 +198,7 @@
                             <h5 class="card-title">SCARA Arm</h5>
                             <p class="card-text">Custom-built robotic arm for pick-and-place automation. Designed for
                                 precision and modularity.</p>
-                            <a href="#"><i class="fab fa-github"></i> View on GitHub</a>
+                            <a class="acolor" href="#"><i class="fab fa-github"></i> View on GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -206,7 +209,7 @@
                             <h5 class="card-title">Underwater ROV Shell</h5>
                             <p class="card-text">Designed for fluid dynamics and component safety in deep-sea
                                 exploration projects.</p>
-                            <a href="#"><i class="fab fa-github"></i> View on GitHub</a>
+                            <a class="acolor" href="#"><i class="fab fa-github"></i> View on GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -217,7 +220,7 @@
                             <h5 class="card-title">Mars Rover</h5>
                             <p class="card-text">Autonomous rover built for harsh terrain, equipped with sensors and
                                 robotic manipulation capabilities.</p>
-                            <a href="#"><i class="fab fa-github"></i> View on GitHub</a>
+                            <a class="acolor" href="#"><i class="fab fa-github"></i> View on GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -243,16 +246,18 @@
                         international competition.</p>
                 </div>
                 <div class="timeline-entry">
-                     <h5><i class="fas fa-user-graduate"></i> UAV Expert <span class="text-muted">(Roboton Bd.,
+                    <h5><i class="fas fa-user-graduate"></i> UAV Expert <span class="text-muted">(Roboton Bd.,
                             2023 - Present)</span></h5>
                     <p> Got it! Here's an updated description including the military drone aspect:
 
-> Assembled and configured drones, including firmware flashing and trial runs. Designed and developed multi-purpose drone platforms for surveillance, delivery, industrial inspection, and military applications.
- </p>
-                    
+                        > Assembled and configured drones, including firmware flashing and trial runs. Designed and
+                        developed multi-purpose drone platforms for surveillance, delivery, industrial inspection, and
+                        military applications.
+                    </p>
+
                 </div>
                 <div class="timeline-entry">
-                   <h5><i class="fas fa-user-cog"></i> Junior Mechanical Designer <span class="text-muted">(UIU Mars
+                    <h5><i class="fas fa-user-cog"></i> Junior Mechanical Designer <span class="text-muted">(UIU Mars
                             Rover Team, 2023 - 2024)</span></h5>
                     <p>Designed robotic arms and optimized wheel systems. Supported fabrication and testing phases of
                         the project.</p>
@@ -305,7 +310,7 @@
 
                     // Optional live preview
                     document.querySelectorAll('h2').forEach(el => el.style.borderColor = avgColor);
-                    document.querySelectorAll('a').forEach(el => el.style.color = avgColor);
+                    document.querySelectorAll('.acolor').forEach(el => el.style.color = avgColor);
                     document.querySelectorAll('.card-title').forEach(el => el.style.color = avgColor);
                 } catch (e) {
                     console.warn("Could not extract image data (CORS issue or image not fully loaded)", e);
