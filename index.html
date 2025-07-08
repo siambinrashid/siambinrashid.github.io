@@ -27,6 +27,26 @@
 
 
     <style>
+        #biography {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url(images/biography-bg.jpeg) center center / cover no-repeat;
+  margin-top: 29px;
+  color: white;
+}
+
+        .position-absolute.top-0.start-0.p-3.z-3 {
+            position: fixed !important;
+            top: 10px !important;
+            left: 10px !important;
+            z-index: 9999 !important;
+            background: transparent;
+            padding: 8px 12px;
+            border-radius: 6px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
         #achievements a {
             color: rgb(58, 58, 238);
             text-decoration: none;
@@ -167,15 +187,15 @@
 
 <body>
     <div class="hero">
-        <!-- Top-left buttons -->
         <div class="position-absolute top-0 start-0 p-3 z-3">
-            <a href="#skills" class="btn btn-outline-light me-2 btn-sm">Skills</a>
-            <a href="#gallery" class="btn btn-outline-light me-2 btn-sm">Gallery</a>
-            <a href="#projects" class="btn btn-outline-light btn-sm">Projects</a>
-            <a href="#achievements" class="btn btn-outline-light btn-sm">Achievements</a>
-            <a href="#work" class="btn btn-outline-light btn-sm">Work Experience</a>
-            <a href="#education" class="btn btn-outline-light btn-sm">Education</a>
+            <a href="#skills" class="btn btn-outline-dark me-2 btn-sm">Skills</a>
+            <a href="#gallery" class="btn btn-outline-dark me-2 btn-sm">Gallery</a>
+            <a href="#projects" class="btn btn-outline-dark me-2 btn-sm">Projects</a>
+            <a href="#achievements" class="btn btn-outline-dark me-2 btn-sm">Achievements</a>
+            <a href="#work" class="btn btn-outline-dark me-2 btn-sm">Work Experience</a>
+            <a href="#education" class="btn btn-outline-dark btn-sm">Education</a>
         </div>
+
 
         <img id="hero-img" src="images/20250527_190856_meaw.jpg" alt="Siam Bin Rashid" crossorigin="anonymous" />
         <h1>Siam Bin Rashid</h1>
@@ -200,12 +220,15 @@
         <section class="section" id="biography">
             <h2><i class="fas fa-user"></i> Biography</h2>
             <p>
-                I’m a passionate mechanical engineer specializing in 3D design, robotics, embedded systems,
-                and drone technology. I have hands-on experience in developing and integrating embedded systems
-                for real-time control, sensor fusion, and automation. With a strong foundation in CAD modeling,
-                CNC prototyping, and drone design—from assembly and firmware flashing to field testing—I bring
-                ideas to life through precision engineering. My work bridges mechanical systems with electronics
-                and software to deliver innovative, high-performance solutions across various domains.
+                I’m Siam Bin Rashid — a robotics engineer with a deep passion for robotics, UAV systems, and embedded technology. My path has been shaped by hands-on work, cross-disciplinary learning, and a drive to engineer solutions that matter.
+
+As the Mechanical Subteam Lead of the UIU Mars Rover Team, I’ve led the end-to-end design and fabrication of our rover — focusing on structure, mobility, arm design, and overall system integration. Competing internationally at the University Rover Challenge (URC) in the U.S. and the Anatolian Rover Challenge (ARC) in Turkey has tested and refined my leadership, mechanical precision, and field readiness. These experiences have made me comfortable operating under pressure while maintaining engineering quality.
+
+Alongside robotics, I’ve worked extensively in the UAV domain, primarily for research, defense, and rescue applications. I’ve designed quadcopters for our rover missions, including systems with custom payload release mechanisms used in military simulation and rescue operations. My designs prioritize reliability, simplicity, and adaptability for mission-specific use cases.
+
+I also have solid experience with embedded systems, integrating sensors and microcontrollers into mechanical platforms for real-time control and feedback. From robotic arms to drone mounts, I build systems that blend mechanical structure with smart electronics.
+
+For me, engineering is not just about function — it’s about building with intention and impact.
 
             </p>
         </section>
@@ -400,33 +423,36 @@
                 <li> 6th in University Rover Challenge 2025, Hanksville,Utah,USA - <a
                         href="https://www.facebook.com/share/p/1BqVGKqWXX/" target="_blank">[6th Position in URC
                         2025]</a> </li>
-                
-                        <li>Best Science Award in University Rover Challenge 2025 -<a
+
+                <li>Best Science Award in University Rover Challenge 2025 -<a
                         href="https://www.tbsnews.net/features/pursuit/university-rover-challenge-2025-how-uiu-set-new-bar-bagging-best-scientist-award"
                         target="_blank">[Best Science Award]</a></li>
 
-                        <li>1st in Asia for consecutive 4rd time at University Rover Challenge 2024, Hanksville,Utah,USA - <a href="https://www.thedailystar.net/campus/campus/news/uiu-first-asia-university-rover-challenge-2024-3625096?fbclid=IwY2xjawLZC4FleHRuA2FlbQIxMABicmlkETFVUWhNeFc4ejFnaW11bUt3AR47SMw19HTHFPVybZ531xGRFwUgxGE2d590eExs4BXH4Bd1X58JitpR-7MG3g_aem_gJ9gj-eddoU9rpRsSXYVhw" 
-                target="_blank">[4 peat Asian Champion]]</a></li>
-                
-                        <li>Mechanical Team Lead -<a href="https://uiumarsrover.org/team/competition/team2025.html"
-                        target="_blank">UIU Mars Rover Team 2025</a></li>
-                
-                        <li>URC 2025 Finalist -<a href="https://uiumarsrover.org/team/competition/team2025.html"
+                <li>1st in Asia for consecutive 4rd time at University Rover Challenge 2024, Hanksville,Utah,USA - <a
+                        href="https://www.thedailystar.net/campus/campus/news/uiu-first-asia-university-rover-challenge-2024-3625096?fbclid=IwY2xjawLZC4FleHRuA2FlbQIxMABicmlkETFVUWhNeFc4ejFnaW11bUt3AR47SMw19HTHFPVybZ531xGRFwUgxGE2d590eExs4BXH4Bd1X58JitpR-7MG3g_aem_gJ9gj-eddoU9rpRsSXYVhw"
+                        target="_blank">[4 peat Asian Champion]</a></li>
+
+                <li>Mechanical Team Lead -<a href="https://uiumarsrover.org/team/competition/team2025.html"
+                        target="_blank">[UIU Mars Rover Team 2025]</a></li>
+
+                <li>URC 2025 Finalist -<a href="https://uiumarsrover.org/team/competition/team2025.html"
                         target="_blank">[URC Finalist]</a></li>
 
-                <li>5th in University Rover Challenge 2024, Hanksville,Utah,USA - <a href="https://www.facebook.com/share/p/19scQpwK4e/" target="_blank">[5th Position in URC 2024]</a></li>
-                
-                <li>1st in Asia for consecutive 3rd time at University Rover Challenge 2024, Hanksville,Utah,USA - <a href="https://www.thedailystar.net/campus/campus/news/uiu-first-asia-university-rover-challenge-2024-3625096?fbclid=IwY2xjawLZC4FleHRuA2FlbQIxMABicmlkETFVUWhNeFc4ejFnaW11bUt3AR47SMw19HTHFPVybZ531xGRFwUgxGE2d590eExs4BXH4Bd1X58JitpR-7MG3g_aem_gJ9gj-eddoU9rpRsSXYVhw" 
-                target="_blank">[Hat-trick Asian Champion]]</a></li>
+                <li>5th in University Rover Challenge 2024, Hanksville,Utah,USA - <a
+                        href="https://www.facebook.com/share/p/19scQpwK4e/" target="_blank">[5th Position in URC
+                        2024]</a></li>
 
-                <li>URC 2024 Finalist -<a href="https://www.facebook.com/share/p/162mzAXSNu/" 
-                    target="_blank">[URC Finalist]</a></li>
+                <li>1st in Asia for consecutive 3rd time at University Rover Challenge 2024, Hanksville,Utah,USA - <a
+                        href="https://www.thedailystar.net/campus/campus/news/uiu-first-asia-university-rover-challenge-2024-3625096?fbclid=IwY2xjawLZC4FleHRuA2FlbQIxMABicmlkETFVUWhNeFc4ejFnaW11bUt3AR47SMw19HTHFPVybZ531xGRFwUgxGE2d590eExs4BXH4Bd1X58JitpR-7MG3g_aem_gJ9gj-eddoU9rpRsSXYVhw"
+                        target="_blank">[Hat-trick Asian Champion]]</a></li>
+
+                <li>URC 2024 Finalist -<a href="https://www.facebook.com/share/p/162mzAXSNu/" target="_blank">[URC
+                        Finalist]</a></li>
 
                 <li>Mechanical Team Member -<a href="https://uiumarsrover.org/team/competition/team2024.html"
-                        target="_blank">[UIU Mars Rover Team 2024]</a></li>    
+                        target="_blank">[UIU Mars Rover Team 2024]</a></li>
 
-                <li>President Scouts Award 2015 -<a href="images/ps2015.jpg"
-                        target="_blank">[President Scouts]</a></li>          
+                <li>President Scouts Award 2015 -<a href="images/ps2015.jpg" target="_blank">[President Scouts]</a></li>
 
             </ul>
         </section>
